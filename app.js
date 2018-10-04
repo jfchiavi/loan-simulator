@@ -34,7 +34,7 @@ app.get('/loanparams', function(req, res, next) {
   	const query = req.query;
 	var calculoIntereses = Loan(query.amount, query.installmentsNumber, query.interestRate, query.diminishing);
   	res.json(calculoIntereses);
-	/*res.json(query);*/
+
 });
 
 // catch 404 and forward to error handler
